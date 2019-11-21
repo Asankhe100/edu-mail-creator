@@ -192,7 +192,7 @@ def Bot(collage,use_captcha):
     time.sleep(3)
 
     if collage == "1":
-        Coastline(name, pw, number, email)
+        Sacremento(name, pw, number, email)
     elif collage == "2":
         Coastline(name,pw,number,email)
     elif collage == "3":
@@ -1546,7 +1546,7 @@ else:
     print("Wrong Input!")
     time.sleep(3)
     exit()
-collage = input("Which Collage?\n1. Sacramento (Google Drive) \n2. Coastline (Azure RDP / maybe broke)\n3. Crafton Hills \n4. San Bernardino\n5. Santa Monica\n6. Solano\n7. CCSF\n 8. Canada College\n 9. Santa Barbara\n\n")
+collage = input("Which Collage?\n1. Sacramento (Google Drive) \n2. Coastline (Azure RDP / maybe broke)\n3. Crafton Hills \n4. San Bernardino\n5. Santa Monica\n6. Solano\n7. CCSF (Google Drive)\n8. Canada College\n9. Santa Barbara\n\n")
 
 if collage == "1":
     print("[*] Sacremento")
