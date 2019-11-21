@@ -129,17 +129,17 @@ def Bot(collage,use_captcha):
     driver.find_element_by_id("inputPasswdConfirm").send_keys(pw)
 
 
-    driver.find_element_by_id("inputPin").send_keys("0420")
-    driver.find_element_by_id("inputPinConfirm").send_keys("0420")
+    driver.find_element_by_id("inputPin").send_keys("1010")
+    driver.find_element_by_id("inputPinConfirm").send_keys("1010")
 
     driver.find_elements_by_tag_name("option")[10].click()
-    driver.find_element_by_id("inputSecurityAnswer1").send_keys("12")
+    driver.find_element_by_id("inputSecurityAnswer1").send_keys("abc")
 
     driver.find_elements_by_tag_name("option")[25].click()
-    driver.find_element_by_id("inputSecurityAnswer2").send_keys("Josh")
+    driver.find_element_by_id("inputSecurityAnswer2").send_keys("def")
 
     driver.find_elements_by_tag_name("option")[42].click()
-    driver.find_element_by_id("inputSecurityAnswer3").send_keys("Tesla 3")
+    driver.find_element_by_id("inputSecurityAnswer3").send_keys("ghi")
 
 
 
