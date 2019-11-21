@@ -230,7 +230,7 @@ def Barbara(name,pw,number,email):
     time.sleep(1)
     driver.find_element_by_id("portal-sign-in-link").click()
     driver.find_element_by_id("inputJUsername").send_keys(name)
-    time.sleep(1)
+    time.sleep(3)
     driver.find_element_by_id("inputJPassword").send_keys(pw)
     driver.find_element_by_name("_eventId_proceed").click()
     time.sleep(3)
@@ -376,7 +376,7 @@ def Canada(name,pw,number,email):
     time.sleep(1)
     driver.find_element_by_id("inputJPassword").send_keys(pw)
     driver.find_element_by_name("_eventId_proceed").click()
-    time.sleep(3)
+    time.sleep(10)
     try:
         driver.find_elements_by_css_selector(".btn-primary")[3].click()
         time.sleep(1)
@@ -500,7 +500,7 @@ def Solano(name,pw,number,email):
     time.sleep(1)
     driver.find_element_by_id("inputJPassword").send_keys(pw)
     driver.find_element_by_name("_eventId_proceed").click()
-    time.sleep(3)
+    time.sleep(10)
     try:
         driver.find_elements_by_css_selector(".btn-primary")[3].click()
         time.sleep(1)
@@ -627,7 +627,7 @@ def ccsf(name,pw,number,email):
     time.sleep(1)
     driver.find_element_by_id("inputJPassword").send_keys(pw)
     driver.find_element_by_name("_eventId_proceed").click()
-    time.sleep(3)
+    time.sleep(10)
     try:
         driver.find_elements_by_css_selector(".btn-primary")[3].click()
         time.sleep(1)
@@ -636,7 +636,6 @@ def ccsf(name,pw,number,email):
         time.sleep(4.5)
     except:
         time.sleep(3)
-
         pass
 #collage auswahl
     collage = Select(driver.find_element_by_id('inputCollegeId'))
@@ -758,7 +757,7 @@ def Sacremento(name,pw,number,email):
     time.sleep(1)
     driver.find_element_by_id("inputJPassword").send_keys(pw)
     driver.find_element_by_name("_eventId_proceed").click()
-    time.sleep(3)
+    time.sleep(10)
     try:
         driver.find_elements_by_css_selector(".btn-primary")[3].click()
         time.sleep(1)
@@ -767,7 +766,6 @@ def Sacremento(name,pw,number,email):
         time.sleep(4.5)
     except:
         time.sleep(3)
-
         pass
 #collage auswahl
     collage = Select(driver.find_element_by_id('inputCollegeId'))
@@ -902,7 +900,7 @@ def Crafton(name,pw,number,email):
     time.sleep(1)
     driver.find_element_by_id("inputJPassword").send_keys(pw)
     driver.find_element_by_name("_eventId_proceed").click()
-    time.sleep(3)
+    time.sleep(10)
     try:
         driver.find_elements_by_css_selector(".btn-primary")[3].click()
         time.sleep(1)
@@ -911,7 +909,6 @@ def Crafton(name,pw,number,email):
         time.sleep(4.5)
     except:
         time.sleep(3)
-
         pass
 #collage auswahl
     collage = Select(driver.find_element_by_id('inputCollegeId'))
@@ -1048,7 +1045,7 @@ def San_Bernardino(name,pw,number,email):
     time.sleep(1)
     driver.find_element_by_id("inputJPassword").send_keys(pw)
     driver.find_element_by_name("_eventId_proceed").click()
-    time.sleep(3)
+    time.sleep(10)
     try:
         driver.find_elements_by_css_selector(".btn-primary")[3].click()
         time.sleep(1)
@@ -1057,7 +1054,6 @@ def San_Bernardino(name,pw,number,email):
         time.sleep(4.5)
     except:
         time.sleep(3)
-
         pass
 #collage auswahl
     collage = Select(driver.find_element_by_id('inputCollegeId'))
@@ -1184,8 +1180,6 @@ def Santa_Monica(name,pw,number,email):
     global generated
     global accounts
 
-
-
     driver = webdriver.Firefox(executable_path= geckopath)
     driver.get("https://www.opencccapply.net/uPortal/f/u63l1s1000/normal/render.uP")
     time.sleep(1)
@@ -1194,7 +1188,7 @@ def Santa_Monica(name,pw,number,email):
     time.sleep(1)
     driver.find_element_by_id("inputJPassword").send_keys(pw)
     driver.find_element_by_name("_eventId_proceed").click()
-    time.sleep(3)
+    time.sleep(10)
     try:
         driver.find_elements_by_css_selector(".btn-primary")[3].click()
         time.sleep(1)
@@ -1325,8 +1319,6 @@ def Coastline(name,pw,number,email):
     global generated
     global accounts
 
-
-
     driver = webdriver.Firefox(executable_path= geckopath)
     driver.get("https://www.opencccapply.net/uPortal/f/u63l1s1000/normal/render.uP")
 
@@ -1335,7 +1327,7 @@ def Coastline(name,pw,number,email):
     time.sleep(1)
     driver.find_element_by_id("inputJPassword").send_keys(pw)
     driver.find_element_by_name("_eventId_proceed").click()
-    time.sleep(3)
+    time.sleep(10)
     try:
         driver.find_elements_by_css_selector(".btn-primary")[3].click()
         time.sleep(1)
@@ -1344,7 +1336,6 @@ def Coastline(name,pw,number,email):
         time.sleep(4.5)
     except:
         time.sleep(3)
-
         pass
 
     collage = Select(driver.find_element_by_id('inputCollegeId'))
@@ -1510,17 +1501,15 @@ def Lassen(name,pw,number,email):
     global generated
     global accounts
 
-
-
     driver = webdriver.Firefox(executable_path= geckopath)
     driver.get("https://www.opencccapply.net/uPortal/f/u63l1s1000/normal/render.uP")
-
+    time.sleep(1)
     driver.find_element_by_id("portal-sign-in-link").click()
     driver.find_element_by_id("inputJUsername").send_keys(name)
-    time.sleep(1)
+    time.sleep(3)
     driver.find_element_by_id("inputJPassword").send_keys(pw)
     driver.find_element_by_name("_eventId_proceed").click()
-    time.sleep(3)
+    time.sleep(10)
     try:
         driver.find_elements_by_css_selector(".btn-primary")[3].click()
         time.sleep(1)
@@ -1529,37 +1518,37 @@ def Lassen(name,pw,number,email):
         time.sleep(4.5)
     except:
         time.sleep(3)
-
         pass
-
+#collage auswahl
     collage = Select(driver.find_element_by_id('inputCollegeId'))
     collage.select_by_value('131')
     driver.find_element_by_id("beginApplicationButton").click()
     time.sleep(4)
+#enrollment
     driver.find_elements_by_tag_name("option")[2].click()
-    time.sleep(1)
+    time.sleep(0.5)
     collage = Select(driver.find_element_by_id('inputEduGoal'))
     collage.select_by_value('F')
-    time.sleep(1.5)
+    time.sleep(1)
     driver.find_elements_by_tag_name("option")[25].click()
     driver.find_element_by_name("_eventId_continue").click()
     time.sleep(2)
+#account info
     driver.find_element_by_id("inputHomelessNoMailingAddress").click()
     time.sleep(1)
-
     driver.find_element_by_id("homelessNoCurrentMailingAddress-confirm-yes").click()
     driver.find_element_by_id("homelessNoCurrentMailingAddressConfirmationDialog-modal-ok-button").click()
     time.sleep(0.5)
     driver.find_element_by_name("_eventId_continue").click()
+#education
     driver.find_elements_by_tag_name("option")[1].click()
     time.sleep(1)
-
     driver.find_elements_by_tag_name("option")[9].click()
     driver.find_element_by_id("inputHsAttendance3").click()
     driver.find_element_by_name("_eventId_continue").click()
+#military
     driver.find_elements_by_tag_name("option")[1].click()
     time.sleep(1)
-
     s2 = Select(driver.find_element_by_id('inputMilitaryStatus'))
     s2.select_by_value('1')
     time.sleep(4.5)
@@ -1568,19 +1557,15 @@ def Lassen(name,pw,number,email):
     driver.find_element_by_id("inputIsEverInFosterCareNo").click()
     time.sleep(4.5)
     driver.find_element_by_name("_eventId_continue").click()
+#needs
     driver.find_element_by_id("inputEnglishYes").click()
     driver.find_element_by_id("inputFinAidInfoNo").click()
     time.sleep(1)
-
     driver.find_element_by_id("inputAssistanceNo").click()
-    driver.find_element_by_id("inputAthleticInterest1").click()
+    driver.find_element_by_id("inputAthleticInterest3").click()
     time.sleep(1)
-
-
-
-    time.sleep(1.5)
     driver.find_element_by_name("_eventId_continue").click()
-
+#demographic
     gender = Select(driver.find_element_by_id('inputGender'))
     gender.select_by_value('Male')
     time.sleep(1)
@@ -1604,66 +1589,27 @@ def Lassen(name,pw,number,email):
     driver.find_element_by_id("inputRaceEthnicity806").click()
     time.sleep(1.5)
     driver.find_element_by_name("_eventId_continue").click()
-
-        #found = Select(driver.find_element_by_id('_supp_MENU_1'))
-        #found.select_by_value('FAM')
     time.sleep(1.5)
-
-
+#supplemental
     driver.find_element_by_id("YESNO_1_yes").click()
-    driver.find_element_by_id("YESNO_2_yes").click()
     time.sleep(1.5)
-    driver.find_element_by_id("_supp_TEXT_1").send_keys(number)
-    time.sleep(1)
-
-    GPA = Select(driver.find_element_by_id('_supp_MENU_2'))
-    GPA.select_by_value('4')
-    time.sleep(1)
-
-    units = Select(driver.find_element_by_id('_supp_MENU_8'))
-    units.select_by_value('4')
-    time.sleep(1)
-
-    money = Select(driver.find_element_by_id('_supp_MENU_3'))
-    money.select_by_value('30')
-    time.sleep(1)
-
-    house = Select(driver.find_element_by_id('_supp_MENU_4'))
-    house.select_by_value('1')
-    time.sleep(1)
-
-    house = Select(driver.find_element_by_id('_supp_MENU_5'))
-    house.select_by_value('B')
-    time.sleep(1)
-
-    driver.find_element_by_id("YESNO_4_yes").click()
-    driver.find_element_by_id("YESNO_5_yes").click()
-    time.sleep(1)
-    driver.find_element_by_id("YESNO_6_yes").click()
-    driver.find_element_by_id("YESNO_7_no").click()
-    time.sleep(1)
-    driver.find_element_by_id("YESNO_8_yes").click()
-    driver.find_element_by_id("YESNO_9_no").click()
-    driver.find_element_by_id("YESNO_10_no").click()
-    time.sleep(1)
-    driver.find_element_by_id("YESNO_11_yes").click()
-    time.sleep(1)
-    driver.find_element_by_id("YESNO_12_no").click()
-    time.sleep(1)
-    driver.find_element_by_id("YESNO_13_no").click()
-    driver.find_element_by_id("YESNO_14_yes").click()
-
-    question = Select(driver.find_element_by_id('_supp_MENU_6'))
-    question.select_by_value('What school did you attend for sixth grade?')
-    time.sleep(1)
-    question = Select(driver.find_element_by_id('_supp_MENU_7'))
-    question.select_by_value('What is the first name of your least favorite relative?')
-    time.sleep(1)
-    driver.find_element_by_id("_supp_TEXT_3").send_keys("Nulled")
-    driver.find_element_by_id("_supp_TEXT_4").send_keys("Nulled")
-    time.sleep(1)
-
+    supp1 = Select(driver.find_element_by_id('_supp_MENU_1'))
+    supp1.select_by_value('CA')
+    time.sleep(1.5)
+    driver.find_element_by_id("YESNO_2_no").click()
+    time.sleep(1.5)
+    supp3 = Select(driver.find_element_by_id('_supp_MENU_3'))
+    supp3.select_by_value('FF')
+    time.sleep(1.5)
+    supp4 = Select(driver.find_element_by_id('_supp_MENU_4'))
+    supp4.select_by_value('AF')
+    time.sleep(1.5)
+    driver.find_element_by_id("YESNO_3_no").click()
+    time.sleep(1.5)
     driver.find_element_by_name("_eventId_continue").click()
+
+#submisson
+
     time.sleep(4.5)
     driver.find_element_by_id("inputConsentYes").click()
     time.sleep(3)
@@ -1688,7 +1634,7 @@ def Lassen(name,pw,number,email):
     print(generated , "/" , accounts , " Accounts are done!")
     with open("accountsb.txt", "a+") as file:
         file.write(name + ":" + pw)
-        file.write(" Email:" + email)
+        file.write("  Email:" + email)
         file.write("\n")
 
 if platform.system() == "Windows": #checking OS
