@@ -10,6 +10,8 @@ from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.select import Select
 from selenium.webdriver.support.ui import WebDriverWait
+from colorama import init
+from termcolor import colored
 
 generated = 0
 
@@ -192,7 +194,7 @@ def Bot(collage,use_captcha):
     time.sleep(3)
 
     if collage == "1":
-        Sacremento(name, pw, number, email)
+        Sacremento(name,pw,number,email)
     elif collage == "2":
         Coastline(name,pw,number,email)
     elif collage == "3":
@@ -209,10 +211,16 @@ def Bot(collage,use_captcha):
         Canada(name,pw,number,email)
     elif collage == "9":
         Barbara(name,pw,number,email)
+    elif collage == "10":
+        Lassen(name,pw,number,email)
     else:
         print("Fuck")
         exit()
 
+#Fall 2019 (08/19/2019 to 12/20/2019)
+#Spring 2020 (01/13/2020 to 05/22/2020)
+#Summer 2020 (06/08/2020 to 08/10/2020)
+#Fall 2020 (08/22/2020 to 12/17/2020)
 def Barbara(name,pw,number,email):
     global generated
     global accounts
@@ -241,7 +249,7 @@ def Barbara(name,pw,number,email):
     driver.find_element_by_id("beginApplicationButton").click()
     time.sleep(4)
 #enrollment
-    driver.find_elements_by_tag_name("option")[1].click()
+    driver.find_elements_by_tag_name("option")[2].click()
     time.sleep(0.5)
     collage = Select(driver.find_element_by_id('inputEduGoal'))
     collage.select_by_value('F')
@@ -356,7 +364,6 @@ def Barbara(name,pw,number,email):
         file.write("  Email:" + email)
         file.write("\n")
 
-
 def Canada(name,pw,number,email):
     global generated
     global accounts
@@ -386,7 +393,7 @@ def Canada(name,pw,number,email):
     driver.find_element_by_id("beginApplicationButton").click()
     time.sleep(4)
 #enrollment
-    driver.find_elements_by_tag_name("option")[1].click()
+    driver.find_elements_by_tag_name("option")[2].click()
     time.sleep(0.5)
     collage = Select(driver.find_element_by_id('inputEduGoal'))
     collage.select_by_value('F')
@@ -510,7 +517,7 @@ def Solano(name,pw,number,email):
     driver.find_element_by_id("beginApplicationButton").click()
     time.sleep(4)
 #enrollment
-    driver.find_elements_by_tag_name("option")[1].click()
+    driver.find_elements_by_tag_name("option")[2].click()
     time.sleep(0.5)
     collage = Select(driver.find_element_by_id('inputEduGoal'))
     collage.select_by_value('F')
@@ -637,7 +644,7 @@ def ccsf(name,pw,number,email):
     driver.find_element_by_id("beginApplicationButton").click()
     time.sleep(4)
 #enrollment
-    driver.find_elements_by_tag_name("option")[1].click()
+    driver.find_elements_by_tag_name("option")[2].click()
     time.sleep(0.5)
     collage = Select(driver.find_element_by_id('inputEduGoal'))
     collage.select_by_value('F')
@@ -739,11 +746,7 @@ def ccsf(name,pw,number,email):
         file.write("  Email:" + email)
         file.write("\n")
 
-
-
-
-
-def San_Bernardino(name,pw,number,email):
+def Sacremento(name,pw,number,email):
     global generated
     global accounts
 
@@ -768,11 +771,11 @@ def San_Bernardino(name,pw,number,email):
         pass
 #collage auswahl
     collage = Select(driver.find_element_by_id('inputCollegeId'))
-    collage.select_by_value('982')
+    collage.select_by_value('233')
     driver.find_element_by_id("beginApplicationButton").click()
     time.sleep(4)
 #enrollment
-    driver.find_elements_by_tag_name("option")[1].click()
+    driver.find_elements_by_tag_name("option")[2].click()
     collage = Select(driver.find_element_by_id('inputEduGoal'))
     collage.select_by_value('K')
     time.sleep(1)
@@ -887,8 +890,6 @@ def San_Bernardino(name,pw,number,email):
         file.write("  Email:" + email)
         file.write("\n")
 
-
-
 def Crafton(name,pw,number,email):
     global generated
     global accounts
@@ -918,7 +919,7 @@ def Crafton(name,pw,number,email):
     driver.find_element_by_id("beginApplicationButton").click()
     time.sleep(4)
 #enrollment
-    driver.find_elements_by_tag_name("option")[1].click()
+    driver.find_elements_by_tag_name("option")[2].click()
     time.sleep(0.5)
     collage = Select(driver.find_element_by_id('inputEduGoal'))
     collage.select_by_value('F')
@@ -1064,7 +1065,7 @@ def San_Bernardino(name,pw,number,email):
     driver.find_element_by_id("beginApplicationButton").click()
     time.sleep(4)
 #enrollment
-    driver.find_elements_by_tag_name("option")[1].click()
+    driver.find_elements_by_tag_name("option")[2].click()
     collage = Select(driver.find_element_by_id('inputEduGoal'))
     collage.select_by_value('K')
     time.sleep(1)
@@ -1179,7 +1180,6 @@ def San_Bernardino(name,pw,number,email):
         file.write("  Email:" + email)
         file.write("\n")
 
-
 def Santa_Monica(name,pw,number,email):
     global generated
     global accounts
@@ -1211,7 +1211,7 @@ def Santa_Monica(name,pw,number,email):
     driver.find_element_by_id("beginApplicationButton").click()
     time.sleep(4)
 #enrollment
-    driver.find_elements_by_tag_name("option")[1].click()
+    driver.find_elements_by_tag_name("option")[2].click()
     collage = Select(driver.find_element_by_id('inputEduGoal'))
     collage.select_by_value('K')
     time.sleep(1)
@@ -1321,8 +1321,6 @@ def Santa_Monica(name,pw,number,email):
         file.write("  Email:" + email)
         file.write("\n")
 
-
-
 def Coastline(name,pw,number,email):
     global generated
     global accounts
@@ -1353,7 +1351,192 @@ def Coastline(name,pw,number,email):
     collage.select_by_value('233')
     driver.find_element_by_id("beginApplicationButton").click()
     time.sleep(4)
+    driver.find_elements_by_tag_name("option")[2].click()
+    time.sleep(1)
+    collage = Select(driver.find_element_by_id('inputEduGoal'))
+    collage.select_by_value('F')
+    time.sleep(1.5)
+    driver.find_elements_by_tag_name("option")[25].click()
+    driver.find_element_by_name("_eventId_continue").click()
+    time.sleep(2)
+    driver.find_element_by_id("inputHomelessNoMailingAddress").click()
+    time.sleep(1)
+
+    driver.find_element_by_id("homelessNoCurrentMailingAddress-confirm-yes").click()
+    driver.find_element_by_id("homelessNoCurrentMailingAddressConfirmationDialog-modal-ok-button").click()
+    time.sleep(0.5)
+    driver.find_element_by_name("_eventId_continue").click()
     driver.find_elements_by_tag_name("option")[1].click()
+    time.sleep(1)
+
+    driver.find_elements_by_tag_name("option")[9].click()
+    driver.find_element_by_id("inputHsAttendance3").click()
+    driver.find_element_by_name("_eventId_continue").click()
+    driver.find_elements_by_tag_name("option")[1].click()
+    time.sleep(1)
+
+    s2 = Select(driver.find_element_by_id('inputMilitaryStatus'))
+    s2.select_by_value('1')
+    time.sleep(4.5)
+    driver.find_element_by_name("_eventId_continue").click()
+    driver.find_element_by_id("inputCaRes2YearsYes").click()
+    driver.find_element_by_id("inputIsEverInFosterCareNo").click()
+    time.sleep(4.5)
+    driver.find_element_by_name("_eventId_continue").click()
+    driver.find_element_by_id("inputEnglishYes").click()
+    driver.find_element_by_id("inputFinAidInfoNo").click()
+    time.sleep(1)
+
+    driver.find_element_by_id("inputAssistanceNo").click()
+    driver.find_element_by_id("inputAthleticInterest1").click()
+    time.sleep(1)
+
+
+
+    time.sleep(1.5)
+    driver.find_element_by_name("_eventId_continue").click()
+
+    gender = Select(driver.find_element_by_id('inputGender'))
+    gender.select_by_value('Male')
+    time.sleep(1)
+
+    trans = Select(driver.find_element_by_id('inputTransgender'))
+    trans.select_by_value('No')
+    time.sleep(4.5)
+    sexual = Select(driver.find_element_by_id('inputOrientation'))
+    sexual.select_by_value('StraightHetrosexual')
+
+    guard = Select(driver.find_element_by_id('inputParentGuardianEdu1'))
+    guard.select_by_value('3')
+    time.sleep(1.5)
+    guard2 = Select(driver.find_element_by_id('inputParentGuardianEdu2'))
+    guard2.select_by_value('Y')
+
+    driver.find_element_by_id("inputHispanicNo").click()
+
+    driver.find_element_by_id("inputRaceEthnicity800").click()
+    time.sleep(4.5)
+    driver.find_element_by_id("inputRaceEthnicity806").click()
+    time.sleep(1.5)
+    driver.find_element_by_name("_eventId_continue").click()
+
+        #found = Select(driver.find_element_by_id('_supp_MENU_1'))
+        #found.select_by_value('FAM')
+    time.sleep(1.5)
+
+
+    driver.find_element_by_id("YESNO_1_yes").click()
+    driver.find_element_by_id("YESNO_2_yes").click()
+    time.sleep(1.5)
+    driver.find_element_by_id("_supp_TEXT_1").send_keys(number)
+    time.sleep(1)
+
+    GPA = Select(driver.find_element_by_id('_supp_MENU_2'))
+    GPA.select_by_value('4')
+    time.sleep(1)
+
+    units = Select(driver.find_element_by_id('_supp_MENU_8'))
+    units.select_by_value('4')
+    time.sleep(1)
+
+    money = Select(driver.find_element_by_id('_supp_MENU_3'))
+    money.select_by_value('30')
+    time.sleep(1)
+
+    house = Select(driver.find_element_by_id('_supp_MENU_4'))
+    house.select_by_value('1')
+    time.sleep(1)
+
+    house = Select(driver.find_element_by_id('_supp_MENU_5'))
+    house.select_by_value('B')
+    time.sleep(1)
+
+    driver.find_element_by_id("YESNO_4_yes").click()
+    driver.find_element_by_id("YESNO_5_yes").click()
+    time.sleep(1)
+    driver.find_element_by_id("YESNO_6_yes").click()
+    driver.find_element_by_id("YESNO_7_no").click()
+    time.sleep(1)
+    driver.find_element_by_id("YESNO_8_yes").click()
+    driver.find_element_by_id("YESNO_9_no").click()
+    driver.find_element_by_id("YESNO_10_no").click()
+    time.sleep(1)
+    driver.find_element_by_id("YESNO_11_yes").click()
+    time.sleep(1)
+    driver.find_element_by_id("YESNO_12_no").click()
+    time.sleep(1)
+    driver.find_element_by_id("YESNO_13_no").click()
+    driver.find_element_by_id("YESNO_14_yes").click()
+
+    question = Select(driver.find_element_by_id('_supp_MENU_6'))
+    question.select_by_value('What school did you attend for sixth grade?')
+    time.sleep(1)
+    question = Select(driver.find_element_by_id('_supp_MENU_7'))
+    question.select_by_value('What is the first name of your least favorite relative?')
+    time.sleep(1)
+    driver.find_element_by_id("_supp_TEXT_3").send_keys("Nulled")
+    driver.find_element_by_id("_supp_TEXT_4").send_keys("Nulled")
+    time.sleep(1)
+
+    driver.find_element_by_name("_eventId_continue").click()
+    time.sleep(4.5)
+    driver.find_element_by_id("inputConsentYes").click()
+    time.sleep(3)
+
+    driver.find_element_by_id("inputESignature").click()
+    driver.find_element_by_id("inputFinancialAidAck").click()
+    print("[*] Sleeping 25 seconds!")
+    time.sleep(25)
+    driver.find_element_by_id("submit-application-button").click()
+    time.sleep(5)
+    driver.find_element_by_name("_eventId_finish").click()
+    time.sleep(1)
+
+    driver.find_element_by_id("inputEnglishSatisfied").click()
+    driver.find_element_by_id("RecommendYes").click()
+    driver.find_element_by_name("_eventId_submit").click()
+
+    time.sleep(1)
+    driver.quit()
+    time.sleep(3)
+    generated += 1
+    print(generated , "/" , accounts , " Accounts are done!")
+    with open("accountsb.txt", "a+") as file:
+        file.write(name + ":" + pw)
+        file.write(" Email:" + email)
+        file.write("\n")
+
+def Lassen(name,pw,number,email):
+    global generated
+    global accounts
+
+
+
+    driver = webdriver.Firefox(executable_path= geckopath)
+    driver.get("https://www.opencccapply.net/uPortal/f/u63l1s1000/normal/render.uP")
+
+    driver.find_element_by_id("portal-sign-in-link").click()
+    driver.find_element_by_id("inputJUsername").send_keys(name)
+    time.sleep(1)
+    driver.find_element_by_id("inputJPassword").send_keys(pw)
+    driver.find_element_by_name("_eventId_proceed").click()
+    time.sleep(3)
+    try:
+        driver.find_elements_by_css_selector(".btn-primary")[3].click()
+        time.sleep(1)
+
+        driver.find_element_by_id("delete-confirmation-ok-button").click()
+        time.sleep(4.5)
+    except:
+        time.sleep(3)
+
+        pass
+
+    collage = Select(driver.find_element_by_id('inputCollegeId'))
+    collage.select_by_value('131')
+    driver.find_element_by_id("beginApplicationButton").click()
+    time.sleep(4)
+    driver.find_elements_by_tag_name("option")[2].click()
     time.sleep(1)
     collage = Select(driver.find_element_by_id('inputEduGoal'))
     collage.select_by_value('F')
@@ -1526,14 +1709,14 @@ print("""""
 ░  ░   ░       ░                  ░         ░  ░ ░      ░  ░      ░ ░         ░        ░  ░     ░  ░            ░ ░     ░     
         ░                                                            ░                                                           
 
-\n
-
-by Exploit
-
 
 """""                                                                                                             
 )
+# use Colorama to make Termcolor work on Windows too
+init()
 
+# then use Termcolor for all colored text output
+print(colored('by Exploit', 'white', 'on_red'))
 
 accounts = int(input("How many Accounts do u want?\n"))
 
@@ -1546,26 +1729,28 @@ else:
     print("Wrong Input!")
     time.sleep(3)
     exit()
-collage = input("Which Collage?\n1. Sacramento (Google Drive) \n2. Coastline (Azure RDP / maybe broke)\n3. Crafton Hills \n4. San Bernardino\n5. Santa Monica\n6. Solano\n7. CCSF (Google Drive)\n8. Canada College\n9. Santa Barbara\n\n")
+collage = input("Which Collage?\n1. Sacramento (Google Drive) \n2. Coastline (Azure RDP / maybe broke)\n3. Crafton Hills \n4. San Bernardino\n5. Santa Monica\n6. Solano\n7. CCSF (Google Drive)\n8. Canada College\n9. Santa Barbara\n10.Lassen Community College\n\n")
 
 if collage == "1":
-    print("[*] Sacremento")
+    print(colored("[*] Sacremento", 'white', 'on_blue'))
 elif collage == "2":
-    print("[*] Coastline")
+    print(colored("[*] Coastline", 'white', 'on_blue'))
 elif collage == "3":
-    print("[*] Crafton Hills")
+    print(colored("[*] Crafton Hills", 'white', 'on_blue'))
 elif collage == "4":
-    print("[*] San Bernardino")
+    print(colored("[*] San Bernardino", 'white', 'on_blue'))
 elif collage == "5":
-    print("[*] Santa Monica")
+    print(colored("[*] Santa Monica", 'white', 'on_blue'))
 elif collage == "6":
-    print("[*] Solano Community")
+    print(colored("[*] Solano Community", 'white', 'on_blue'))
 elif collage == "7":
-    print("[*] City College of San Francisco ")
+    print(colored("[*] City College of San Francisco ", 'white', 'on_blue'))
 elif collage == "8":
-    print("[*] Canada Collage")
+    print(colored("[*] Canada Collage", 'white', 'on_red'))
 elif collage == "9":
-    print("[*] Santa Barbara City College")
+    print(colored("[*] Santa Barbara City College", 'white', 'on_blue'))
+elif collage == "10":
+    print(colored("[*] Lassen Community College", 'white', 'on_blue'))
 else:
     print("Wrong input")
     time.sleep(3)
@@ -1575,5 +1760,3 @@ else:
 while accounts > generated:
     createaccount(collage, use_captcha)
     #Bot(collage, use_captcha)
-
-
